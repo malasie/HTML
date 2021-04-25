@@ -1,11 +1,16 @@
 function f(){
     var imie = input1.value
     var nazwisko=input2.value
-    const litery= /^[a-zA-Z ]{3,}$/g;
-    if (imie[0]==imie[0].toUpperCase() && imie.slice(1)==imie.slice(1).toLowerCase() && litery.test(imie)) {
-        alert('ALL GOOD!')
+    var email=input3.value
+    const i= /^[a-zA-ZąćęłóśżźĄĆĘŁÓŚŻŹ]{3,}$/g;
+    const n= /^[a-zA-ZąćęłóśżźĄĆĘŁÓŚŻŹ ]{3,}$/g;
+    const mail =/^(\w|\.|-)*\@+(\w{2,})+(\.\w{2,})+$/;
+    if (imie[0]!=imie[0].toUpperCase() || imie.slice(1)!=imie.slice(1).toLowerCase() || !i.test(nazwisko)) {
+        alert('Nieprawidlowe imie ')
     }
-    else {alert('Nieprawidlowe imie ')}
-    if (nazwisko.charAt(0)==nazwisko.charAt(0).toUpperCase() && nazwisko.substr(1)==nazwisko.substr(1).toLowerCase(), litery.test(nazwisko));
-    else {alert('Nieprawidłowo wprowadzone nazwisko')}
+    else if (nazwisko[0]!=nazwisko[0].toUpperCase() || nazwisko.slice(1)!=nazwisko.slice(1).toLowerCase() || !n.test(nazwisko)) {
+        alert('Nieprawidłowo wprowadzone nazwisko')
+    }
+    else if (!mail.test(email)){ alert('Zły email')}
+    else {alert('All Good!')}
 }
