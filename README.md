@@ -1,2 +1,2 @@
-# HTML
-Repisatory for my first steps HTML projects, most of which are for my classes.
+# HTML & JAVASCRIPT
+Repisatory for my first steps HTML and JavaScript projects, most of which are for my classes.
