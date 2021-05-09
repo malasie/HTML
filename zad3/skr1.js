@@ -5,7 +5,7 @@ function f(){
     const i= /^[a-zA-ZąćęłóśżźĄĆĘŁÓŚŻŹ]{3,}$/g;
     const n= /^[a-zA-ZąćęłóśżźĄĆĘŁÓŚŻŹ ]{3,}$/g;
     const mail =/^(\w|\.|-)*\@+(\w{2,})+(\.\w{2,})+$/;
-    if (imie[0]!=imie[0].toUpperCase() || imie.slice(1)!=imie.slice(1).toLowerCase() || !i.test(nazwisko)) {
+    if (imie[0]!=imie[0].toUpperCase() || imie.slice(1)!=imie.slice(1).toLowerCase() || !i.test(imie)) {
         alert('Nieprawidlowe imie ')
     }
     else if (nazwisko[0]!=nazwisko[0].toUpperCase() || nazwisko.slice(1)!=nazwisko.slice(1).toLowerCase() || !n.test(nazwisko)) {
