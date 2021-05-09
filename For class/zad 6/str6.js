@@ -37,5 +37,8 @@ window.setInterval(function () {
     const seconds5 = document.querySelector('.seconds5');
     seconds5.style.transform = `rotate(${date2.getSeconds() / 60 * 360}deg)`;
 
+    var sound = document.getElementById(sound1);
+    if(date2.getHours()+9==24 && date2.getMinutes()==0 && date2.getSeconds()==0){ sound.Play(); alert('12AM KST!!')}
+
 
 }, 1000);
