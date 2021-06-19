@@ -1,4 +1,6 @@
-Pierwsze zadanie na zajęcia z języków skryptowych.
+# Pierwsze zadanie na zajęcia z języków skryptowych.
+
+### Treść zadania:
 
 Utwórz stronę internetową o zaplanowanych poniżej elementach z wykorzystaniem tabel   
 
