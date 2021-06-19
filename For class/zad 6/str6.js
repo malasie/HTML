@@ -37,8 +37,15 @@ window.setInterval(function () {
     const seconds5 = document.querySelector('.seconds5');
     seconds5.style.transform = `rotate(${date2.getSeconds() / 60 * 360}deg)`;
 
-    var sound = document.getElementById(sound1);
-    if(date2.getHours()+9==24 && date2.getMinutes()==0 && date2.getSeconds()==0){ sound.Play(); alert('12AM KST!!')}
+    const alarmHours = date2.getHours()+9;
+    const alarmMinutes = date2.getMinutes();
+    const alarmSeconds = date2.getSeconds();
 
+    const sound = new Audio('sound.mp3');
+
+    if(alarmHours == 23 && alarmMinutes == 59 && alarmSeconds == 59){
+        sound.play();
+        alert("IT'S TIME!!")
+    }
 
 }, 1000);
